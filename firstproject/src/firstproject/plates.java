@@ -49,12 +49,12 @@ public class plates {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel plates = new JLabel(new ImageIcon("PLATES3.jpg"));
-		plates.setBounds(0, -3, 428, 126);
+		JLabel plates = new JLabel(new ImageIcon(plates.class.getResource("/firstproject/PLATES3.jpg")));
+		plates.setBounds(10, 11, 428, 126);
 		frame.getContentPane().add(plates);
 		
-		JLabel prize = new JLabel(new ImageIcon("PLATES3.jpg"));
-		prize.setBounds(121, 23, 156, 97);
+		JLabel prize = new JLabel(new ImageIcon(plates.class.getResource("/firstproject/goodprize.jpg")));
+		prize.setBounds(144, 165, 147, 96);
 		frame.getContentPane().add(prize);
 		
 		JButton playButton = new JButton("Play");
@@ -65,12 +65,12 @@ public class plates {
 					int ranNum = (int)ranNumDouble; //cast random number to int
 					
 					if (ranNum == 1) { //first case
-						plates.setIcon(new ImageIcon("untitled-1-recovered.jpg")); //set image to label
-						prize.setIcon(new ImageIcon("untitled-1-recovered.jpg"));
+						plates.setIcon(new ImageIcon(plates.class.getResource("/firstproject/Untitled-1-Recovered.jpg"))); //set image to label
+						prize.setIcon(new ImageIcon(plates.class.getResource("/firstproject/badprize.jpg"))); //consulation prize
 					} 
 					if (ranNum == 2) { //second case
-						plates.setIcon(new ImageIcon("plate3bronken.jpg"));
-						prize.setIcon(new ImageIcon("plate3bronken.jpg"));
+						plates.setIcon(new ImageIcon(plates.class.getResource("/firstproject/plate3bronken.jpg")));
+						prize.setIcon(new ImageIcon(plates.class.getResource("/firstproject/goodprize.jpg")));
 					} 
 			}
 		});
