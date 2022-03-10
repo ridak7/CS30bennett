@@ -81,7 +81,7 @@ public class MetricC {
 		select.setBounds(10, 26, 216, 22);
 		frame.getContentPane().add(select);
 		
-	}
+	}//
 }
 
 
